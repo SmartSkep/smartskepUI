@@ -1,21 +1,33 @@
+import { StringHelper } from "./Utilities/StringHelper";
+
 export class Router {
 	constructor() {
 	}
 
+
 	Route = async () => {
+		const controllers = {
+			Home:  /* webpackChunkName: "HomeController" */ `./Controllers/HomeController.js`,
+			UnderConstruction: /* webpackChunkName: "UnderConstructionController" */ `./Controllers/UnderConstructionController.js`,
+		};
+
+
 		const name = window.location.pathname;
 		let pageName = name.split("/").pop();
 		pageName = pageName.split(".").shift();
-		const controllerName = convertToPascalCase(pageName);
-		
-		const {[controllerName + 'Controller']: Controller} = await import("./Controllers/" + controllerName + 'Controller.js');
-		const controller = new Controller();
-		controller.Init();
+		let controllerName = StringHelper.ConvertToPascalCase(pageName);
+		if (pageName === ""){
+			controllerName = "Home";
+		}
 
-		function convertToPascalCase(input) {
-			const words = input.split(/[_\-]/);
-			const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
-			return capitalizedWords.join('');
+		if (controllerName in controllers) {
+			const controllerPath = controllers[controllerName];
+			const controller = await import(/* webpackChunkName: "[request]" */ `${controllerPath}`);
+			const controllerInstance = new controller[`${controllerName}Controller`]();
+			controllerInstance.Init();
+		} else {
+			// Handle case where controllerName is not found
+			console.error(`Controller not found for ${controllerName}`);
 		}
 	};
 }

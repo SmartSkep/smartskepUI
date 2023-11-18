@@ -1,3 +1,126 @@
-.under-construction-page-wrapper{
+.under-construction-page-wrapper {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    position: relative;
+
+
+    .count-down-wrapper{
+        position: relative;
+        z-index: 10;
+        color:white;
+        margin-left: 13.9rem;
+
+        .count-down-content-wrapper{
+            gap: 8rem;
+        }
+
+        .count-down-number{
+            min-width: 9.1rem;
+        }
+
+        .logo-wrapper{
+            width: fit-content;
+            margin-left: 5%;
+        }
+
+        .bubble{
+            background: $accent-1;
+            border-radius: 3.3rem;
+            padding: .5rem 2rem;
+        }
+    }
+
+    @media (max-width: 900px) {
+        align-items: center;
+        
+        .count-down-wrapper{
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: 660px){
+        padding: 0 4rem;
+
+        .count-down-wrapper{
+            width: 100%;
+
+            .count-down-number{
+                min-width: 7.5rem;
+            }
+        } 
+        
+        .count-down-wrapper .logo-wrapper{
+            align-self: center;
+            width: calc(100% - 10%);
+            margin-left: 0; 
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .count-down-wrapper .count-down-content-wrapper{
+            gap: 4rem;
+            justify-content: space-between;
+        }
+
+        .txt-regular{
+            font-size: 1.6rem;
+        }
+
+        .txt-massive{
+            font-size: 5.2rem;
+        }
+    }
+
+    @media (max-width: 586px){
+        height: calc(100vh - 9rem);
+    }
+
+    @media (max-width: 480px){
+        padding: 0 2rem;
+        height: calc(100vh - 8.2rem);
+
+        .count-down-wrapper .count-down-number{
+            min-width: 5.7rem;
+        }
+
+        .count-down-number .count-down-content-wrapper{
+            gap: 2.5rem;
+        }
+
+        .txt-massive{
+            font-size: 4.5rem;
+        }
+
+        .count-down-wrapper .logo-wrapper{
+            width: calc(100% - 30%);
+            margin-left: 0;
+        }
+
+        .count-down-wrapper .bubble{
+            padding: .3rem 1rem;
+        }
+    }
+
     
+
+    @media (max-width: 400px){
+        .txt-massive{
+            font-size: 3rem;
+        }
+
+        .count-down-wrapper .count-down-number{
+            min-width: 4rem;
+        }
+
+        .count-down-number .count-down-content-wrapper{
+            gap: 1rem;
+        }
+
+        .txt-regular{
+            font-size: 1.4rem;
+        }
+    }
 }
