@@ -1,0 +1,61 @@
+// Contains utility Classes
+
+.bg-primary {
+}
+
+.bg-light {
+}
+
+.bg-dark {
+}
+
+// ---------- display utilities -----------------
+.grid {
+    display: grid;
+}
+
+.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.align-items-c {
+    align-items: center;
+}
+
+.justify-c{
+    justify-content: center;
+}
+
+// -------------------- Text Uitilites ----------------
+.bold {
+    font-weight: 700;
+}
+
+.txt-align-right {
+    text-align: right;
+}
+.txt-align-center {
+    text-align: center;
+}
+.txt-align-left {
+    text-align: left;
+}
+
