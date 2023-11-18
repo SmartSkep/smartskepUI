@@ -52,10 +52,55 @@
 .txt-align-right {
     text-align: right;
 }
-.txt-align-center {
+.txt-align-c {
     text-align: center;
 }
 .txt-align-left {
     text-align: left;
 }
 
+
+// -------------- font-utilities ---------------------
+.ff-poppins{
+    font-family: 'Poppins', 'sans serif';
+}
+
+.txt-xx-small{
+    font-size: 1.2rem;
+}
+
+.txt-x-small{
+    font-size: 1.4rem;
+}
+
+.txt-small{
+    font-size: 1.6rem;
+}
+
+.txt-regular{
+    font-size: 1.8rem;
+}
+
+.txt-medium{
+    font-size: 2rem;
+}
+
+.txt-large{
+    font-size: 2.4rem;
+}
+
+.txt-x-larget{
+    font-size: 2.6rem;
+}
+
+.txt-massive{
+    font-size: 7.2rem;
+}
+
+.relative{
+    position: relative;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,23 @@
+footer{
+    width: 100%;
+    padding: 2rem 4rem;
+    margin-top: auto;
+    background: $secondary-color;
+    color: white;
+    bottom: 0;
+    z-index: 5;
+
+    @media (max-width: 660px){
+        .txt-regular{
+            font-size: 1.6rem;
+        }
+    }
+
+    @media (max-width: 480px){
+        .txt-regular{
+            font-size: 1.4rem;
+        }
+        padding: 2rem;
+    }
+    
+}
