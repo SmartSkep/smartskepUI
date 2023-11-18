@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunksmartskepweb"] = self["webpackChunksmartskepweb"] || []).push([["assets_js_src_Controllers_ServicesController_js"],{
+(self["webpackChunksmartskepweb"] = self["webpackChunksmartskepweb"] || []).push([["Controllers-IndexController"],{
 
 /***/ "./assets/js/src/Controllers/Base/BaseController.js":
 /*!**********************************************************!*\
@@ -26,15 +26,15 @@ var BaseController = /*#__PURE__*/_createClass(function BaseController() {
 
 /***/ }),
 
-/***/ "./assets/js/src/Controllers/ServicesController.js":
-/*!*********************************************************!*\
-  !*** ./assets/js/src/Controllers/ServicesController.js ***!
-  \*********************************************************/
+/***/ "./assets/js/src/Controllers/IndexController.js":
+/*!******************************************************!*\
+  !*** ./assets/js/src/Controllers/IndexController.js ***!
+  \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ServicesController: () => (/* binding */ ServicesController)
+/* harmony export */   IndexController: () => (/* binding */ IndexController)
 /* harmony export */ });
 /* harmony import */ var _Base_BaseController_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Base/BaseController.js */ "./assets/js/src/Controllers/Base/BaseController.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
@@ -52,23 +52,23 @@ function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key i
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
-var ServicesController = /*#__PURE__*/function (_BaseController) {
-  _inherits(ServicesController, _BaseController);
-  var _super = _createSuper(ServicesController);
-  function ServicesController() {
+var IndexController = /*#__PURE__*/function (_BaseController) {
+  _inherits(IndexController, _BaseController);
+  var _super = _createSuper(IndexController);
+  function IndexController() {
     var _this;
-    _classCallCheck(this, ServicesController);
+    _classCallCheck(this, IndexController);
     _this = _super.call(this, "Home");
     _defineProperty(_assertThisInitialized(_this), "Init", function () {
       //alert("you called me");
-      console.log("Showing Services Controller");
+      console.log("Hello");
     });
     return _this;
   }
-  return _createClass(ServicesController);
+  return _createClass(IndexController);
 }(_Base_BaseController_js__WEBPACK_IMPORTED_MODULE_0__.BaseController);
 
 /***/ })
 
 }]);
-//# sourceMappingURL=assets_js_src_Controllers_ServicesController_js.js.map
+//# sourceMappingURL=Controllers-IndexController.js.map

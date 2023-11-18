@@ -15,6 +15,10 @@
             gap: 8rem;
         }
 
+        .count-down-number{
+            min-width: 9.1rem;
+        }
+
         .logo-wrapper{
             width: fit-content;
             margin-left: 5%;
@@ -41,6 +45,9 @@
         .count-down-wrapper{
             width: 100%;
 
+            .count-down-number{
+                min-width: 7.5rem;
+            }
         } 
         
         .count-down-wrapper .logo-wrapper{
@@ -75,6 +82,14 @@
         padding: 0 2rem;
         height: calc(100vh - 8.2rem);
 
+        .count-down-wrapper .count-down-number{
+            min-width: 5.7rem;
+        }
+
+        .count-down-number .count-down-content-wrapper{
+            gap: 2.5rem;
+        }
+
         .txt-massive{
             font-size: 4.5rem;
         }
@@ -94,6 +109,14 @@
     @media (max-width: 400px){
         .txt-massive{
             font-size: 3rem;
+        }
+
+        .count-down-wrapper .count-down-number{
+            min-width: 4rem;
+        }
+
+        .count-down-number .count-down-content-wrapper{
+            gap: 1rem;
         }
 
         .txt-regular{
